@@ -83,16 +83,10 @@
     "dark": "/logo/logo-light.png"
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:support@foreverr.id"
-      }
-    ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "WhatsApp",
+      "href": "https://wa.me/628126666196"
     }
   },
   "contextual": {
