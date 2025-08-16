@@ -1,7 +1,8 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Foreverr",
+  "name": "Foreverr Invitation",
+  "description": "Panduan Pengguna untuk user Foreverr Invitation",
   "colors": {
     "primary": "#31626C",
     "light": "#07C983",
@@ -9,9 +10,10 @@
   },
   "favicon": "/favicon.ico",
   "navigation": {
-    "tabs": [
+    "dropdowns": [
       {
-        "tab": "Panduan Pengguna",
+        "dropdown": "Panduan Pengguna",
+        "icon": "book",
         "groups": [
           {
             "group": "Digital Guestbook",
