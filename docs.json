@@ -11,10 +11,10 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Digital Guestbook",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Pengenalan",
             "pages": [
               "index",
               "quickstart",
