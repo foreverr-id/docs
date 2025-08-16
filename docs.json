@@ -17,7 +17,7 @@
             "group": "Digital Guestbook",
             "pages": [
               "index",
-              "guestbook/home"
+              "digital-guestbook/home"
             ]
           },
           {
