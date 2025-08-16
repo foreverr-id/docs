@@ -5,7 +5,7 @@
   "colors": {
     "primary": "#31626C",
     "light": "#07C983",
-    "dark": "#15803D"
+    "dark": "#31626C"
   },
   "favicon": "/favicon.ico",
   "navigation": {
@@ -14,7 +14,7 @@
         "tab": "Digital Guestbook",
         "groups": [
           {
-            "group": "Pengenalan",
+            "group": "Panduan",
             "pages": [
               "index",
               "quickstart",
