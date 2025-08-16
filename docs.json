@@ -16,7 +16,7 @@
         "icon": "book",
         "groups": [
           {
-            "group": "Digital Guestbook",
+            "group": "Panduan",
             "pages": [
               "index",
               "digital-guestbook/home"
