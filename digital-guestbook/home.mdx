@@ -8,15 +8,41 @@ Halaman **Beranda** adalah pusat kontrol utama untuk memantau jalannya acara sec
 
 ![Home Jp](/images/home.jpg)
 
-## Menu Aksi Utama
+## 1. Menu Aksi Utama
 
 Di bagian tengah atas halaman, terdapat tombol-tombol utama untuk proses check-in:
 
 <AccordionGroup>
-  <Accordion title="Scan QR" defaultOpen icon="qrcode" iconType="regular">
+  <Accordion title="Scan QR" defaultOpen={false} icon="qrcode" iconType="regular">
     Digunakan untuk memindai kode QR pada undangan tamu. Setiap tamu yang berhasil dipindai akan otomatis tercatat hadir.
   </Accordion>
   <Accordion title="Cari Tamu" icon="user-magnifying-glass" iconType="regular">
     Menyediakan fitur pencarian cepat berdasarkan nama tamu pada daftar undangan. Cocok digunakan jika tamu tidak membawa QR code.
   </Accordion>
+  <Accordion title="Check-In Manual" icon="user-plus">
+    Digunakan untuk mencatat kehadiran tamu secara manual, tanpa QR. Biasanya dipakai jika tamu hadir mendadak atau tidak ada dalam daftar.
+  </Accordion>
+  <Accordion title="Check-In Scanner" icon="scanner-gun">
+    Mode khusus pemindaian cepat menggunakan alat Scanner **QR Code **2D untuk memperlancar antrean masuk tamu.
+
+    <Warning>
+      fitur ini hanya bisa digunakan menggunakan device PC/Laptop.
+    </Warning>
+  </Accordion>
 </AccordionGroup>
+
+### 2. **Statistik Tamu Undangan**
+
+ Bagian ini menampilkan data ringkasan kehadiran tamu:
+
+- **Live Report Kehadiran** → menunjukkan jumlah tamu yang sudah check-in dibanding total undangan.
+- **Tamu Tambahan** → jumlah tamu yang masuk melalui check-in manual.
+- **Total Tamu** → mencakup tamu yang konfirmasi hadir, belum konfirmasi, dan perkiraan kehadiran.
+- **Kategori Tamu** → rincian jumlah tamu berdasarkan kategori (Regular, VIP, VVIP).
+
+### **3. Ringkasan Hadiah & Ucapan**
+
+Di sisi kanan layar, terdapat dua panel ringkasan tambahan:
+
+- **Total Hadiah** → rekap hadiah berdasarkan kategori (Kado, Amplop, Transfer).
+- **Ucapan & Doa** → jumlah pesan/ucapan yang diterima dari tamu maupun pengunjung umum.
