@@ -21,6 +21,13 @@
               "index",
               "digital-guestbook/home"
             ]
+          },
+          {
+            "group": "Tutorial",
+            "pages": [
+              "index",
+              "tutorial"
+            ]
           }
         ]
       }
