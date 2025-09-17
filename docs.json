@@ -25,7 +25,6 @@
           {
             "group": "Tutorial",
             "pages": [
-              "index",
               "tutorial/fitur-import-contact"
             ]
           }
