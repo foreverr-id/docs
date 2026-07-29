@@ -18,11 +18,11 @@
         "dropdown": "Digital Guestbook",
         "icon": "book-open-reader",
         "pages": [
-          "guestbook",
-          "kelola-tamu",
-          "managemen-meja",
-          "managemen-souvenir",
-          "ucapan"
+          "guestbook-2",
+          "guestbook/kelola-tamu",
+          "guestbook/managemen-meja",
+          "guestbook/managemen-souvenir",
+          "guestbook/ucapan"
         ]
       },
       {
