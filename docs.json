@@ -18,7 +18,7 @@
         "dropdown": "Digital Guestbook",
         "icon": "book-open-reader",
         "pages": [
-          "guestbook-2",
+          "guestbook",
           "guestbook/kelola-tamu",
           "guestbook/managemen-meja",
           "guestbook/managemen-souvenir",
