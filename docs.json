@@ -10,25 +10,19 @@
   },
   "favicon": "/favicon.ico",
   "navigation": {
-    "groups": [
+    "dropdowns": [
       {
-        "group": "Tutorial",
+        "dropdown": "Digital Guestbook",
+        "icon": "book-open-reader",
         "pages": [
-          "tutorial/fitur-import-contact"
+          "guestbook",
+          "untitled-page-2"
         ]
       },
       {
-        "group": "Digital Guestbook",
-        "icon": "book",
+        "dropdown": "Tutorial",
         "pages": [
-          {
-            "group": "Panduan",
-            "pages": [
-              "digital-guestbook/home",
-              "index"
-            ]
-          },
-          "untitled-page"
+          "tutorial/fitur-import-contact"
         ]
       }
     ]
