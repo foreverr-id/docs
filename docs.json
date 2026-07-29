@@ -56,5 +56,11 @@
       "website": "https://tiktok.com/@foreverr.id",
       "facebook": "https://facebook.com/foreverr.id"
     }
+  },
+  "appearance": {
+    "default": "light"
+  },
+  "fonts": {
+    "family": "Montserrat"
   }
 }
