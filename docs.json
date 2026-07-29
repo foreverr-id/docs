@@ -2,15 +2,15 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "Foreverr Invitation",
-  "description": "Panduan Pengguna untuk user Foreverr Invitation",
+  "description": "Panduan Pengguna untuk Buku Tamu Digital by Foreverr Invitation",
   "colors": {
-    "primary": "#31626C",
-    "light": "#07C983",
-    "dark": "#31626C"
+    "primary": "#31626c",
+    "light": "#3a8695",
+    "dark": "#31626c"
   },
   "favicon": {
-    "light": "splas",
-    "dark": "/images/splash.png"
+    "light": "/logo/splash.png",
+    "dark": "/logo/splash.png"
   },
   "navigation": {
     "dropdowns": [
@@ -57,8 +57,8 @@
   "footer": {
     "socials": {
       "instagram": "https://instagram.com/foreverr.id",
-      "website": "https://tiktok.com/@foreverr.id",
-      "facebook": "https://facebook.com/foreverr.id"
+      "facebook": "https://facebook.com/foreverr.id",
+      "telegram": "https://t.me/foreverrivitation"
     }
   },
   "appearance": {
@@ -72,5 +72,11 @@
   },
   "thumbnails": {
     "appearance": "light"
+  },
+  "background": {
+    "decoration": "windows"
+  },
+  "interaction": {
+    "drilldown": true
   }
 }
