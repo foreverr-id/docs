@@ -49,8 +49,9 @@
   "contextual": {
     "options": [
      "copy",
-     "view",
-     "chatgpt"
+    "chatgpt",
+    "download-pdf",
+    "assistant"
    ]
   },
   "footer": {
@@ -68,5 +69,8 @@
   },
   "icons": {
     "library": "fontawesome"
+  },
+  "thumbnails": {
+    "appearance": "light"
   }
 }
