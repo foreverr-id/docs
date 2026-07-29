@@ -9,7 +9,7 @@
     "dark": "#31626C"
   },
   "favicon": {
-    "light": "/favicon.ico",
+    "light": "/images/logo.png",
     "dark": "/images/logo.png"
   },
   "navigation": {
@@ -21,6 +21,7 @@
           "guestbook",
           "kelola-tamu",
           "untitled-page-3",
+          "untitled-page-4",
           "untitled-page-2"
         ]
       },
@@ -34,7 +35,8 @@
   },
   "logo": {
     "light": "/logo/logo-dark.png",
-    "dark": "/logo/logo-light.png"
+    "dark": "/logo/logo-light.png",
+    "href": "/"
   },
   "navbar": {
     "primary": {

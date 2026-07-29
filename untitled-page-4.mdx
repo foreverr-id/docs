@@ -1,0 +1,124 @@
+---
+title: "Manajemen Souvenir"
+sidebarTitle: "Manajemen Souvenir"
+description: "Panduan lengkap pengelolaan stok souvenir, pemindaian QR Code penyerahan, hingga pemantauan riwayat pengambilan souvenir di lokasi acara."
+icon: "box-heart"
+---
+
+<Info>
+  Halaman **Managemen Souvenir** berfungsi untuk mencatat jenis dan kuota stok souvenir, mendistribusikan souvenir kepada tamu yang hadir melalui pemindaian QR Code atau pencarian manual, serta memantau riwayat penyerahan secara real-time.
+</Info>
+
+## Tombol Akses Cepat & Kontrol Utama
+
+Di bagian atas halaman, terdapat dua tombol kontrol utama untuk operasional penyerahan souvenir di lapangan:
+
+<CardGroup cols={2}>
+  <Card title="Scan QR Code" icon="qrcode">
+    Membuka pemindai kamera untuk melakukan penyerahan souvenir secara instan dengan memindai QR Code pada undangan digital tamu.
+  </Card>
+
+  <Card title="Cari Tamu" icon="magnifying-glass">
+    Fitur pencarian manual berdasarkan nama atau kode tamu apabila tamu tidak membawa atau lupa menunjukkan QR Code.
+  </Card>
+</CardGroup>
+
+---
+
+## Indikator Stok & Jenis Souvenir
+
+Sistem menampilkan persentase akumulasi penyerahan souvenir serta kartu pemantauan stok untuk tiap jenis souvenir:
+
+<AccordionGroup>
+  <Accordion title="Total Akumulasi Souvenir" icon="chart-pie">
+    - **Persentase Terbagi:** Grafik lingkaran yang menunjukkan persentase total souvenir yang sudah diserahkan dibanding total target (contoh: _1%_).
+    - **Rasio Penyerahan:** Menampilkan jumlah souvenir terbagi dibanding total kapasitas stok (contoh: _3 / 225 pcs_).
+  </Accordion>
+
+  <Accordion title="Kartu Stok per Jenis Souvenir (Item Cards)" icon="boxes-stacked">
+    Menampilkan rincian kuota untuk masing-masing jenis souvenir yang disediakan:
+
+    - **Kategori Souvenir Spesifik:** Kartu khusus untuk tiap varian souvenir (contoh: _Dompet_, _Gelas_, atau item lainnya).
+    - **Progres Terbagi per Item:** Angka penyerahan terbagi dibanding total kuota item tersebut (contoh: _Dompet 1/75 pcs_, _Gelas 2/150 pcs_).
+    - **Bar Progres Visual:** Garis indikator keterisian yang berubah seiring bertambahnya jumlah pengambilan.
+    - **Menu Opsi Item (Ikon Titik Tiga):** Opsi untuk mengubah nama souvenir, memperbarui jumlah kuota stok, atau menghapus jenis souvenir.
+  </Accordion>
+
+  <Accordion title="Tombol Tambah Souvenir" icon="plus">
+    Tombol khusus bertanda **Tambah Souvenir** untuk memasukkan varian souvenir baru beserta jumlah kuota stok yang disiapkan.
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Panel Riwayat Pengambilan (Real-Time History)
+
+Panel di sisi kanan mencatat setiap transaksi penyerahan souvenir secara langsung beserta filter kategorinya:
+
+<AccordionGroup>
+  <Accordion title="Filter Riwayat Pengambilan" icon="filter">
+    Gunakan tombol filter di bagian atas panel untuk menyaring tampilan riwayat:
+
+    - **Semua:** Menampilkan seluruh riwayat penyerahan dari semua jenis souvenir.
+    - **Kategori Spesifik:** Tombol filter berdasarkan item tertentu (contoh: _Dompet_ saja atau _Gelas_ saja).
+  </Accordion>
+
+  <Accordion title="Rincian Baris Transaksi Riwayat" icon="clock-rotate-left">
+    Setiap baris riwayat pengambilan mencantumkan informasi detail:
+
+    - **Nama Tamu:** Identitas tamu yang telah menerima souvenir (contoh: _Aura Kasih_, _Nadia_, _Fara_).
+    - **Jenis Souvenir:** Nama item souvenir yang diambil oleh tamu tersebut (contoh: _Dompet_ atau _Gelas_).
+    - **Stempel Waktu (Timestamp):** Waktu pasti penyerahan souvenir dilakukan di lokasi acara (contoh: _02.04_).
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Cara Mengoperasikan Penyerahan Souvenir
+
+Sistem menyediakan alur fleksibel untuk pencatatan penyerahan souvenir di meja penerima tamu:
+
+<Tabs>
+  <Tab title="Penyerahan via Scan QR Code (Metode Utama)">
+    1. Klik tombol **Scan QR Code** di bagian atas halaman.
+    2. Arahkan kamera perangkat ke QR Code yang ditunjukkan pada ponsel atau fisik undangan tamu.
+    3. Sistem akan secara otomatis memverifikasi nama tamu, mengurangi kuota stok souvenir terkait, dan mencatatnya ke panel **Riwayat Pengambilan**.
+  </Tab>
+  <Tab title="Penyerahan via Cari Tamu (Metode Manual)">
+    1. Jika tamu tidak membawa QR Code, klik tombol **Cari Tamu**.
+    2. Ketik nama lengkap atau kode unik tamu pada kolom pencarian.
+    3. Pilih nama tamu yang sesuai dari hasil pencarian, lalu konfirmasi penyerahan jenis souvenir yang diberikan.
+  </Tab>
+  <Tab title="Menambah Jenis Souvenir Baru">
+    1. Klik tombol **Tambah Souvenir** (berada di bawah kartu stok item).
+    2. Masukkan nama varian souvenir (contoh: _Pouch Kulit_ atau _Payung_).
+    3. Tentukan jumlah kuota stok awal yang tersedia.
+    4. Simpan untuk menambahkan kartu item baru ke dalam dashboard.
+  </Tab>
+</Tabs>
+
+---
+
+## Tahapan Alur Kerja Manajemen Souvenir
+
+<Steps>
+  <Step title="Input Jenis & Kuota Souvenir">
+    Sebelum acara dimulai, buat seluruh daftar varian souvenir dan masukkan total kuota stoknya melalui tombol **Tambah Souvenir**.
+  </Step>
+  <Step title="Persiapkan Perangkat Tim Souvenir">
+    Buka halaman **Managemen Souvenir** pada tablet atau smartphone petugas penyerah souvenir di lokasi acara.
+  </Step>
+  <Step title="Proses Penyerahan di Lokasi">
+    Gunakan fitur **Scan QR Code** saat tamu mengambil souvenir, atau gunakan **Cari Tamu** jika terjadi kendala teknis pada QR Code tamu.
+  </Step>
+  <Step title="Pantau Sisa Stok secara Real-Time">
+    Perhatikan indikator progres pada kartu stok item untuk memantau sisa kuota souvenir yang belum terbagi.
+  </Step>
+  <Step title="Evaluasi Riwayat Penyerahan">
+    Gunakan panel **Riwayat Pengambilan** di akhir acara untuk mencocokkan total fisik souvenir yang tersisa dengan data transaksi sistem.
+  </Step>
+</Steps>
+
+<Warning>
+  Pastikan setiap pengambilan souvenir selalu dipindai atau dicatat di sistem secara langsung untuk mencegah terjadinya pemberian souvenir ganda kepada tamu yang sama.
+</Warning>
