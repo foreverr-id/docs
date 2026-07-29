@@ -1,0 +1,128 @@
+---
+title: "Manajemen Meja"
+sidebarTitle: "Manajemen Meja"
+description: "Panduan lengkap penataan nomor meja, alokasi kapasitas tempat duduk tamu, dan pemantauan status check-in lokasi acara."
+icon: "chair"
+---
+
+<Info>
+  Halaman **Managemen Meja** berfungsi untuk memetakan denah tempat duduk tamu, mengatur alokasi nomor atau nama meja, serta memantau keterisian kursi di lokasi acara secara real-time saat hari pelaksanaan.
+</Info>
+
+## Ringkasan Indikator Meja
+
+Di bagian atas halaman, Anda dapat memantau ringkasan kapasitas secara cepat:
+
+<CardGroup cols={2}>
+  <Card title="Pencarian & Filter Meja" icon="magnifying-glass">
+    Kolom pencarian untuk menemukan nomor meja, nama meja, atau nama tamu tertentu dengan cepat.
+  </Card>
+
+  <Card title="Ringkasan Kapasitas" icon="chair">
+    Menampilkan total jumlah meja yang aktif serta total jumlah tamu yang sudah ditempatkan di meja.
+  </Card>
+
+  <Card title="Urutan Tampilan" icon="arrow-down-short-wide">
+    Opsi pengurutan daftar meja (contoh: berdasarkan _Terlama_, _Terbaru_, atau nama meja).
+  </Card>
+
+  <Card title="Tambah & Unduh" icon="download">
+    Tombol aksi cepat **Tambah Meja** untuk membuat meja baru dan **Download** untuk mengunduh denah/data alokasi meja.
+  </Card>
+</CardGroup>
+
+---
+
+## Anatomi Kartu Meja (Table Card)
+
+Setiap blok/kartu meja menampilkan informasi mendalam mengenai status keterisian dan daftar tamu di dalamnya:
+
+<AccordionGroup>
+  <Accordion title="Header & Indikator Keterisian Meja" icon="heading">
+    - **Nama Meja:** Identitas meja (contoh: _VIP 1_, _VIP 2_, _VVIP 3_, _VIP 4_).
+    - **Rasio Kapasitas:** Jumlah kursi terisi dibanding total kapasitas (contoh: _8 / 8_ atau _9 / 10_).
+    - **Status Presentase:** Indikator visual tingkat keterisian (contoh: _100% Terisi_ atau _90% Terisi_).
+    - **Indikator Check-In:** Jumlah tamu di meja tersebut yang sudah hadir di lokasi acara (contoh: _2 Check-In_ atau _4 Check-In_).
+  </Accordion>
+
+  <Accordion title="Informasi Atribut Tamu di Meja" icon="user-tag">
+    Setiap baris nama tamu di dalam kartu meja memuat detail penting:
+
+    - **Nama Utama & Partner:** Menampilkan nama tamu terdaftar serta slot pendamping bawaannya (contoh: _1. Adam Marvel_, _2. Partner Adam Marvel_).
+    - **Badge Kategori:** Label warna tingkat prioritas tamu (_VIP_, _VVIP_, atau _REGULAR_).
+    - **Kode Unik Undangan:** Kode identifikasi registrasi tamu (contoh: `4OK028RA`).
+    - **Status Konfirmasi & Jumlah Pax:** Keterangan konfirmasi RSVP (_Akan Hadir_, _Belum Konfirmasi_, atau _Tidak Hadir_) beserta jumlah porsi/pax.
+    - **Label Grup:** Keterangan kelompok relasi tamu (contoh: _Teman Kerja_, _Pihak Romeo_).
+    - **Status Check-In Khusus:** Tanda khusus apabila tamu yang bersangkutan sudah berada di lokasi (_Check In 2 Pax_).
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Cara Mengelola Penataan Meja
+
+Sistem menyediakan beberapa fungsi utama untuk mengatur dan mengubah alokasi tempat duduk:
+
+<Tabs>
+  <Tab title="Membuat Meja Baru">
+    1. Klik tombol **Tambah Meja** di bagian atas halaman.
+    2. Masukkan nama/nomor meja (misalnya: _VIP 5_ atau _Meja Keluarga Utama_).
+    3. Tentukan batas maksimal kapasitas kursi (_pax_) untuk meja tersebut.
+    4. Simpan meja baru.
+  </Tab>
+  <Tab title="Menempatkan Tamu ke Meja">
+    1. Cari kartu meja yang ingin diisi.
+    2. Klik tombol **TEMPATKAN** di bagian bawah kartu meja.
+    3. Pilih nama tamu yang tersedia dari daftar untuk dimasukkan ke dalam meja tersebut.
+    4. Kapasitas meja akan bertambah secara otomatis sesuai dengan jumlah _pax_ tamu.
+  </Tab>
+  <Tab title="Memindahkan / Menghapus Tamu dari Meja">
+    - Untuk mengeluarkan tamu dari meja, klik ikon **Hapus/Lepas** (ikon tempat sampah) di sebelah kanan baris nama tamu pada kartu meja.
+    - Tamu yang dilepas akan kembali ke daftar tamu belum memiliki meja dan dapat ditempatkan ke meja lain.
+  </Tab>
+  <Tab title="Mengunduh Data Laporan Meja">
+    Klik tombol **Download** di baris kontrol atas untuk mengunduh rekapitulasi data alokasi meja dalam format file siap cetak atau lampiran koordinasi tim resepsi.
+  </Tab>
+</Tabs>
+
+---
+
+## Pemantauan Real-Time Saat Hari Pelaksanaan
+
+Fitur Manajemen Meja terintegrasi langsung dengan portal _usher_ penerima tamu:
+
+<AccordionGroup>
+  <Accordion title="Pelacakan Kedatangan Tamu per Meja" icon="street-view">
+    Saat petugas _usher_ memindai QR Code tamu di pintu masuk, status kehadiran pada kartu meja akan secara otomatis diperbarui:
+
+    - Angka indikator **Check-In** pada _header_ meja akan bertambah secara otomatis.
+    - Baris nama tamu terkait akan menampilkan _badge_ status **Check In (Jumlah Pax)**.
+    - Hal ini memudahkan koordinator area (_floor manager_) untuk mengetahui meja mana saja yang sudah terisi penuh atau masih kosong.
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Tahapan Alur Kerja Manajemen Meja
+
+<Steps>
+  <Step title="Buat Struktur Meja">
+    Buat seluruh daftar meja beserta kapasitas batas maksimumnya sesuai dengan denah ruang acara (_layout venue_).
+  </Step>
+  <Step title="Petakan Tamu VIP & VVIP">
+    Prioritaskan penempatan tamu kategori **VVIP** dan **VIP** terlebih dahulu ke meja-meja strategis.
+  </Step>
+  <Step title="Kelompokkan berdasarkan Grup Relasi">
+    Gunakan label **Grup** (contoh: _Pihak Romeo_, _Teman Kerja_) agar tamu-tamu dengan hubungan relasi yang sama berada dalam satu meja atau area yang berdekatan.
+  </Step>
+  <Step title="Cetak / Unduh Laporan Meja">
+    Gunakan fitur **Download** sebelum acara dimulai untuk diserahkan kepada penerima tamu dan koordinator catering.
+  </Step>
+  <Step title="Pantau Kehadiran saat Acara">
+    Gunakan pemantauan indikator **Check-In** pada tiap kartu meja untuk memastikan seluruh tamu penting telah menduduki meja yang disiapkan.
+  </Step>
+</Steps>
+
+<Warning>
+  Pastikan total kapasitas _pax_ yang diset pada setiap meja sesuai dengan jumlah fisik kursi di lokasi untuk menghindari penumpukan atau kekurangan tempat duduk.
+</Warning>
