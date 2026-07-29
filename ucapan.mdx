@@ -1,0 +1,112 @@
+---
+title: "Ucapan & Doa"
+sidebarTitle: "Ucapan & Doa"
+description: "Panduan lengkap pengelolaan pesan, ucapan selamat, dan doa dari tamu undangan maupun pengunjung umum, serta cara mengekspor laporan dokumen."
+---
+
+<Info>
+  Halaman **Ucapan** berfungsi sebagai pusat penampungan seluruh doa, harapan, dan ucapan selamat yang dikirimkan oleh para tamu melalui website undangan digital maupun konfirmasi otomatis via WhatsApp.
+</Info>
+
+## Indikator Statistik Ucapan
+
+Di bagian atas halaman, Anda dapat memantau ringkasan total ucapan masuk berdasarkan sumber pengirimnya:
+
+<CardGroup cols={3}>
+  <Card title="Total Ucapan" icon="comments">
+    Menampilkan jumlah kumulatif seluruh pesan dan doa yang telah masuk ke dalam sistem acara.
+  </Card>
+
+  <Card title="Ucapan dari Tamu" icon="user-check">
+    Jumlah pesan yang dikirim oleh tamu resmi yang terdaftar di database (memiliki Kode Tamu).
+  </Card>
+
+  <Card title="Ucapan dari Umum" icon="users">
+    Jumlah pesan yang dikirim oleh pengunjung umum/publik yang mengakses via tautan undangan publik.
+  </Card>
+</CardGroup>
+
+---
+
+## Fitur Kontrol & Ekspor Laporan
+
+Bagian atas tabel menyediakan alat navigasi dan pencarian untuk mempermudah pengelolaan ucapan:
+
+<AccordionGroup>
+  <Accordion title="Export PDF" icon="file-pdf">
+    Tombol di sudut kanan atas (**Export PDF**) untuk mengunduh seluruh rekapitulasi ucapan dan doa dalam bentuk dokumen PDF yang rapi dan siap dicetak atau disimpan sebagai kenang-kenangan acara.
+  </Accordion>
+
+  <Accordion title="Filter & Pencarian Ucapan" icon="magnifying-glass">
+    - **Filter:** Menyaring tampilan kartu ucapan berdasarkan kategori tertentu.
+    - **Cari Tamu...:** Kolom pencarian cepat untuk menemukan ucapan dari nama tamu, pengirim tertentu, atau kode tamu spesifik.
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Anatomi Kartu Ucapan (Wish Card)
+
+Setiap ucapan ditampilkan dalam bentuk kartu (_card_) yang rapi berisi informasi lengkap:
+
+<AccordionGroup>
+  <Accordion title="Informasi Pengirim & Kode Tamu" icon="id-card">
+    - **Nama Pengirim:** Nama tamu atau pengirim pesan (contoh: _Noval_, _Adam Marvel_, _Hadiroh_).
+    - **Kode Tamu:** Kode unik identifikasi tamu resmi (contoh: `B068DKB9`, `4OK028RA`). Kolom ini akan kosong jika ucapan dikirim oleh pengunjung umum.
+  </Accordion>
+
+  <Accordion title="Isi Pesan & Sumber Ucapan" icon="message">
+    - **Pesan Otomatis RSVP:** Ucapan bawaan sistem yang masuk secara otomatis saat tamu melakukan konfirmasi kehadiran via WhatsApp (contoh: `Konfirmasi via WhatsApp (Hadir) (Ref: #B068DKB9)`).
+    - **Pesan Manual/Kustom:** Pesan dan doa personal yang ditulis langsung oleh tamu melalui form ucapan di website undangan (contoh: _Selamat ya bolo_ atau _Hadirah oke lah_).
+  </Accordion>
+
+  <Accordion title="Stempel Waktu & Tombol Aksi" icon="clock-rotate-left">
+    - **Tanggal & Waktu:** Menampilkan stempel waktu presisi saat ucapan diterima oleh sistem (contoh: _29/07/2026 13:11_).
+    - **Tombol Hapus:** Tombol berwarna merah bertuliskan **Hapus** pada tiap kartu ucapan untuk menghapus pesan yang tidak diinginkan atau kurang pantas.
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Cara Mengelola & Memproses Ucapan
+
+Sistem menyediakan fungsi pengelolaan ucapan dengan alur yang sangat mudah:
+
+<Tabs>
+  <Tab title="Mencari Ucapan Spesifik">
+    1. Ketik nama pengirim atau Kode Tamu pada kolom **Cari Tamu...**.
+    2. Sistem akan menyaring dan menampilkan kartu ucapan yang sesuai secara langsung.
+  </Tab>
+  <Tab title="Menghapus Ucapan Modus/Spam">
+    1. Temukan kartu ucapan yang ingin dihapus.
+    2. Klik tombol **Hapus** (berwarna merah) di sudut kanan atas kartu ucapan tersebut.
+    3. Konfirmasi penghapusan untuk membersihkan data ucapan.
+  </Tab>
+  <Tab title="Mengunduh Laporan Ucapan (PDF)">
+    1. Klik tombol **Export PDF** di pojok kanan atas halaman.
+    2. File PDF akan terunduh secara otomatis berisi seluruh kompilasi nama pengirim, kode tamu, isi doa, serta tanggal pengiriman.
+  </Tab>
+</Tabs>
+
+---
+
+## Tahapan Alur Kerja Modul Ucapan
+
+<Steps>
+  <Step title="Pantau Pesan Masuk">
+    Buka modul **Ucapan** secara berkala untuk membaca ucapan dan doa terbaru dari para tamu.
+  </Step>
+  <Step title="Moderasi Pesan">
+    Gunakan tombol **Hapus** apabila terdapat ucapan yang salah ketik, ganda, atau pesan sembarangan dari pengunjung umum.
+  </Step>
+  <Step title="Cari Doa dari Tamu VIP">
+    Gunakan kolom **Cari Tamu...** untuk memeriksa ucapan khusus yang dikirimkan oleh keluarga atau tamu penting (_VIP_/_VVIP_).
+  </Step>
+  <Step title="Unduh Arsip Kenang-Kenangan">
+    Gunakan fitur **Export PDF** setelah seluruh rangkaian acara selesai untuk menyimpan seluruh arsip doa ucapan sebagai kenang-kenangan momen spesial Anda.
+  </Step>
+</Steps>
+
+<Warning>
+  Penghapusan ucapan bersifat permanen. Pastikan Anda memeriksa isi pesan sebelum menekan tombol **Hapus**.
+</Warning>
