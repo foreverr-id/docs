@@ -22,7 +22,11 @@
           "guestbook/kelola-tamu",
           "guestbook/managemen-meja",
           "guestbook/managemen-souvenir",
-          "guestbook/ucapan"
+          "guestbook/ucapan",
+          {
+            "group": "Penerima Tamu",
+            "pages": []
+          }
         ]
       },
       {
@@ -44,7 +48,12 @@
       "label": "WhatsApp",
       "href": "https://wa.me/628126666196"
     },
-    "links": []
+    "links": [
+      {
+        "href": "https://app.foreverr.id",
+        "label": "Dashboard"
+      }
+    ]
   },
   "contextual": {
     "options": [
