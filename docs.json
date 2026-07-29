@@ -59,9 +59,8 @@
     "options": [
      "copy",
     "chatgpt",
-    "download-pdf",
-    "assistant"
-   ]
+    "download-pdf"
+  ]
   },
   "footer": {
     "socials": {
