@@ -41,7 +41,8 @@
       "type": "button",
       "label": "WhatsApp",
       "href": "https://wa.me/628126666196"
-    }
+    },
+    "links": []
   },
   "contextual": {
     "options": [
@@ -61,6 +62,9 @@
     "default": "light"
   },
   "fonts": {
-    "family": "Montserrat"
+    "family": "Roboto"
+  },
+  "icons": {
+    "library": "fontawesome"
   }
 }
