@@ -1,0 +1,160 @@
+---
+title: "Panduan Detail Pengelolaan Data Tamu"
+sidebarTitle: "Kelola Data Tamu"
+description: "Panduan komprehensif cara menambahkan, mengelompokkan, mengirimkan undangan, hingga mengekspor data tamu."
+---
+
+<Info>
+  Halaman **Data Tamu** adalah pusat database utama tempat Anda mengatur seluruh daftar penerima undangan, memantau konfirmasi RSVP per individu, serta mengelola status pengiriman WhatsApp.
+</Info>
+
+## Struktur Tabel & Informasi Data Tamu
+
+Setiap entri tamu di dalam tabel memiliki kolom atribut lengkap untuk mempermudah identifikasi:
+
+<CardGroup cols={2}>
+  <Card title="Kode & Nama Tamu" icon="id-card">
+    Menampilkan kode unik tamu (contoh: `B068DKB9`) dan nama lengkap yang akan disapa pada undangan.
+  </Card>
+
+  <Card title="Kontak WhatsApp" icon="whatsapp">
+    Nomor telepon aktif tamu dengan format kode negara (contoh: `6287782007502`).
+  </Card>
+
+  <Card title="Kategori & Grup" icon="layer-group">
+    Pengelompokan prioritas (_Regular_, _VIP_, _VVIP_) serta relasi (_Pihak Romeo_, _Teman Kerja_, dll).
+  </Card>
+
+  <Card title="Meja & Keterangan" icon="chair">
+    Penetapan nomor/posisi meja lokasi acara beserta catatan khusus (contoh: _Tamu Spesial_, _Terapkan layanan terbaik_).
+  </Card>
+
+  <Card title="Konfirmasi & Jumlah Pax" icon="clipboard-user">
+    Status kepastian (_Hadir_, _Tidak Hadir_, atau belum mengisi) serta estimasi porsi rombongan (_2 Orang_, _3 Orang_).
+  </Card>
+
+  <Card title="Status Blast & Tindakan" icon="paper-plane">
+    Status pengiriman WhatsApp (_New_, _Sent_, _Delivered_, _Read_, _Failed_, _Skipped_) dan tombol aksi cepat.
+  </Card>
+</CardGroup>
+
+---
+
+## Cara Menambahkan & Mengimpor Data Tamu
+
+Sistem menyediakan beberapa pilihan metode memasukkan data tamu secara cepat:
+
+<AccordionGroup>
+  <Accordion title="Tambah Tamu Manual (Satu per Satu)" icon="user-plus">
+    1. Klik tombol **Tamu** di bagian atas tabel.
+    2. Isi nama lengkap, nomor WhatsApp, pilih **Kategori**, **Grup**, serta alokasi **Meja**.
+    3. Tambahkan **Keterangan** tambahan jika ada permintaan khusus.
+    4. Simpan data.
+  </Accordion>
+
+  <Accordion title="Impor Massal (Excel / CSV / Contact)" icon="file-import">
+    - **Import Excel/CSV:** Klik tombol **Import** untuk mengunggah berkas data tamu sekaligus menggunakan templat yang disediakan.
+    - **Import Contact:** Klik tombol **Import Contact** untuk menarik kontak langsung dari daftar kontak perangkat Anda.
+  </Accordion>
+
+  <Accordion title="Kelola Kelompok (Group)" icon="folder-plus">
+    Klik tombol **Group** untuk membuat atau merubah nama grup relasi baru (misalnya: _Keluarga Inti_, _Alumni SMA_, _Rekan Bisnis_) sebelum membagikan tamu ke dalam kelompoknya.
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Metode Penyebaran Undangan WhatsApp
+
+Anda memiliki fleksibilitas penuh untuk menentukan cara pengiriman pesan ke para tamu:
+
+<Tabs>
+  <Tab title="Pengiriman Massal (WhatsApp Blast)">
+    Digunakan untuk menyebarkan undangan sekaligus ke banyak tamu:
+
+    1. Centang kotak (_checkbox_) pada nama-nama tamu yang ingin dikirimi pesan, atau centang di bagian _header_ untuk memilih semua.
+    2. Klik tombol **WhatsApp Blast** di atas tabel.
+    3. Sistem akan secara otomatis memproses pengiriman pesan menghemat waktu Anda.
+  </Tab>
+  <Tab title="Pengiriman Manual (Satu per Satu)">
+    Digunakan jika ingin menyapa tamu secara personal atau mengirim ulang ke nomor spesifik:
+
+    - **Tamu Baru (Status New):** Klik tombol **Kirim** di baris tamu yang bersangkutan.
+    - **Kirim Pengingat / Kirim Ulang:** Klik tombol **Kirim Ulang** untuk tamu yang berstatus _Read_ atau _Delivered_ tetapi belum melakukan konfirmasi RSVP.
+  </Tab>
+  <Tab title="Edit Template Pesan Manual">
+    Klik tombol **Edit Template WA Manual** di bagian atas untuk menyesuaikan format kata-kata sapaan, nama pasangan, dan tautan unik undangan sesuai dengan bahasa Anda sendiri.
+  </Tab>
+</Tabs>
+
+---
+
+## Penanganan Status Pengiriman & Masalah
+
+Setiap pesan yang dikirimkan memiliki indikator status transparan:
+
+<AccordionGroup>
+  <Accordion title="Arti Status Pengiriman WhatsApp" icon="circle-info">
+    - **New:** Tamu baru didaftarkan dan undangan belum pernah dikirim.
+    - **Sent / Delivered:** Pesan telah berhasil terkirim dan masuk ke perangkat WhatsApp tamu.
+    - **Read:** Tamu telah membuka dan membaca pesan undangan.
+    - **Failed:** Pesan gagal terkirim (biasanya akibat nomor tidak terdaftar WhatsApp, nomor salah, atau format tidak lengkap).
+    - **Skipped:** Pengiriman terlewati, biasanya karena kolom nomor telepon dikosongkan.
+  </Accordion>
+
+  <Accordion title="Solusi Jika Pesan Berstatus Gagal (Failed)" icon="wrench">
+    1. Periksa kolom **Whatsapp** pada nama tamu terkait.
+    2. Pastikan nomor diawali dengan kode negara (contoh: gunakan `628...` bukan `08...`).
+    3. Jika nomor kosong, klik tombol **Edit** (ikon pensil), masukkan nomor WhatsApp aktif, lalu klik simpan.
+    4. Lakukan pengiriman ulang secara manual dengan menekan tombol **Kirim**.
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Manajemen Lanjutan & Ekspor Data
+
+<AccordionGroup>
+  <Accordion title="Pencarian & Filter Data Tamu" icon="filter">
+    - **Pencarian Cepat:** Gunakan kolom **Cari Tamu...** untuk menemukan nama, kode unik, atau nomor telepon tertentu.
+    - **Penyaringan (Filter):** Klik tombol **Filter** untuk menyaring tampilan tabel berdasarkan Kategori (_VIP_/_Regular_), Grup, atau Status Konfirmasi Kehadiran.
+  </Accordion>
+
+  <Accordion title="Aksi Massal (Bulk Actions)" icon="list-check">
+    Centang beberapa tamu untuk melakukan aksi bersamaan:
+
+    - **E-Invitation:** Melihat atau menyalin tautan undangan khusus dari tamu yang dipilih.
+    - **Edit Massal:** Mengubah Kategori, Grup, atau Meja sekaligus.
+    - **Delete Massal:** Menghapus data tamu tercentang yang tidak lagi diperlukan.
+  </Accordion>
+
+  <Accordion title="Ekspor Cetak / PDF" icon="file-pdf">
+    Klik tombol **Export PDF** di bagian atas untuk mengunduh rekapitulasi daftar tamu dalam format siap cetak untuk keperluan fisik di meja penerima tamu.
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Alur Kerja Rekomendasi Pengelolaan Tamu
+
+<Steps>
+  <Step title="Persiapan Data & Format Nomor">
+    Lakukan penginputan atau _import_ data tamu. Pastikan seluruh nomor telepon menggunakan kode negara `62...`.
+  </Step>
+  <Step title="Pengelompokan & Penataan Meja">
+    Tentukan **Kategori** (_VIP_/_VVIP_) dan pilih alokasi **Meja** untuk tamu khusus.
+  </Step>
+  <Step title="Penyebaran Undangan Utama">
+    Gunakan **WhatsApp Blast** untuk menyebarkan undangan massal, atau gunakan tombol **Kirim** manual untuk tamu-tamu VIP secara personal.
+  </Step>
+  <Step title="Monitoring & Follow-up">
+    Pantau status pengiriman. Jika status menunjukkan _Failed_, perbaiki nomor teleponnya. Jika status _Read_ tetapi belum konfirmasi, lakukan pengiriman ulang pesan pengingat (_reminder_).
+  </Step>
+  <Step title="Cetak Data untuk Hari-H">
+    Gunakan fitur **Export PDF** sebelum hari pelaksanaan untuk diserahkan ke koordinator acara dan tim penerima tamu (_usher_).
+  </Step>
+</Steps>
+
+<Warning>
+  Sebelum melakukan _WhatsApp Blast_ massal, selalu periksa **Sisa Kuota WA Official Blast** Anda di bagian indikator atas agar proses pengiriman tidak terhenti di tengah jalan.
+</Warning>
