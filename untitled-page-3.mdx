@@ -1,0 +1,992 @@
+---
+title: "Kelola Tamu"
+description: "Panduan menambah, mengimpor, mencari, memfilter, mengedit, dan menghapus data tamu."
+icon: "users"
+---
+
+# Panduan Data Tamu
+
+Halaman **Data Tamu** digunakan untuk mengelola daftar undangan dalam satu tempat, mulai dari menambahkan tamu, mengelompokkan tamu, memantau RSVP, membuat E-Invitation, mengirim WhatsApp Blast, sampai mengekspor daftar tamu ke PDF.
+
+<Info>
+  Panduan ini ditulis untuk pengguna admin Foreverr Invitation. Nama tombol dan istilah mengikuti tampilan aplikasi agar langkah-langkahnya mudah dicocokkan langsung dengan dashboard.
+</Info>
+
+## Apa yang bisa dilakukan di halaman Data Tamu?
+
+<CardGroup cols={2}>
+  <Card title="Kelola daftar tamu">
+    Tambah, edit, cari, filter, pilih banyak tamu, dan hapus data tamu.
+  </Card>
+
+  <Card title="Import dari Excel">
+    Masukkan banyak data tamu sekaligus menggunakan file `.xls` atau `.xlsx`.
+  </Card>
+
+  <Card title="Kelola RSVP">
+    Pantau tamu yang hadir, belum konfirmasi, atau tidak hadir.
+  </Card>
+
+  <Card title="Buat E-Invitation">
+    Generate undangan personal untuk satu atau banyak tamu.
+  </Card>
+
+  <Card title="Kirim WhatsApp Blast">
+    Pilih beberapa tamu, gunakan template WhatsApp, lalu pantau status pengirimannya.
+  </Card>
+
+  <Card title="Export PDF">
+    Unduh daftar tamu berdasarkan status RSVP, kategori, atau grup tertentu.
+  </Card>
+</CardGroup>
+
+---
+
+## 1. Membuka menu Data Tamu
+
+### Melalui komputer atau laptop
+
+<Steps>
+  <Step title="Masuk ke dashboard">
+    Login ke dashboard Foreverr Invitation menggunakan akun event Anda.
+  </Step>
+  <Step title="Buka Data Tamu">
+    Pada sidebar sebelah kiri, klik **Data Tamu**.
+  </Step>
+  <Step title="Pilih Semua Tamu">
+    Pada submenu Data Tamu, klik **Semua Tamu** untuk membuka daftar lengkap tamu.
+  </Step>
+</Steps>
+
+Di dalam menu **Data Tamu** tersedia submenu:
+
+- **Semua Tamu** — halaman utama untuk mengelola daftar undangan.
+- **WhatsApp Chat** — komunikasi individual dengan tamu.
+- **WA Blast History** — melihat riwayat pengiriman WhatsApp Blast.
+
+### Melalui ponsel
+
+Pada tampilan mobile, navigasi utama berada di bagian bawah layar:
+
+- **Beranda**
+- **Data Tamu**
+- **Buku Tamu**
+- **Ucapan**
+- **Menu**
+
+Klik **Data Tamu** untuk membuka daftar tamu.
+
+<Tip>
+  Jika menu tertentu seperti Manajemen Meja, Manajemen Souvenir, atau Pengaturan tidak terlihat di navigasi bawah, buka tombol **Menu**.
+</Tip>
+
+---
+
+## 2. Memahami bagian atas halaman Data Tamu
+
+Sebelum mengelola daftar tamu, pahami tiga kelompok statistik yang tampil di bagian atas halaman.
+
+### Kuota WA Official Blast
+
+Bagian **Kuota WA Official Blast** membantu Anda melihat ketersediaan kuota pesan WhatsApp.
+
+Informasi yang ditampilkan meliputi:
+
+- **Tersedia**
+- **Terpakai**
+- **Sisa Kuota**
+- Persentase penggunaan kuota dalam bentuk grafik donat
+
+Tersedia pula tombol:
+
+- **Tambah Kuota**
+- **Pelajari WA Blast**
+
+<Note>
+  Pastikan sisa kuota mencukupi sebelum mengirim WhatsApp Blast ke banyak tamu.
+</Note>
+
+### Status Pengiriman WA Blast
+
+Bagian ini menampilkan rekap status pesan WhatsApp:
+
+| Status | Arti sederhana |
+| --- | --- |
+| **Terkirim (Sent)** | Pesan sudah dikirim oleh sistem |
+| **Diterima (Delivered)** | Pesan sudah diterima oleh perangkat tujuan |
+| **Dibuka (Read)** | Pesan sudah dibaca |
+| **Gagal (Failed)** | Pesan tidak berhasil dikirim |
+| **Total Pesan** | Total seluruh pesan yang tercatat |
+
+<Warning>
+  Status **Sent**, **Delivered**, dan **Read** memiliki arti yang berbeda. Jangan menganggap pesan sudah dibaca hanya karena statusnya sudah terkirim.
+</Warning>
+
+### Statistik Tamu
+
+Bagian **Statistik Tamu** memberikan gambaran cepat mengenai kondisi daftar undangan.
+
+Data yang tampil antara lain:
+
+- **Total Daftar Tamu**
+- **Konfirmasi Hadir**
+- **Belum Konfirmasi**
+- **Tidak Hadir**
+- **Perkiraan Akan Hadir**
+
+Pada beberapa statistik, sistem menggunakan format **Tamu/Pax**:
+
+- angka tamu menunjukkan jumlah entri tamu;
+- angka pax menunjukkan jumlah orang yang tercatat, termasuk jumlah yang dibawa.
+
+**Perkiraan Akan Hadir** merupakan akumulasi orang yang masuk dalam kelompok **Konfirmasi Hadir** dan **Belum Konfirmasi**. Tamu dengan RSVP **Tidak Hadir** tidak dihitung.
+
+---
+
+## 3. Menambahkan tamu secara manual
+
+Gunakan cara ini jika Anda ingin menambahkan satu atau beberapa tamu satu per satu.
+
+<Steps>
+  <Step title="Buka form Tambah Tamu">
+    Pada halaman Data Tamu, pilih fungsi **Tambah Tamu** hingga muncul form **Tambah Tamu**.
+  </Step>
+  <Step title="Isi Nama Tamu">
+    Isi kolom **Nama Tamu**. Kolom ini wajib diisi.
+  </Step>
+  <Step title="Isi nomor WhatsApp">
+    Nomor WhatsApp bersifat opsional. Untuk nomor Indonesia, pilih kode negara `+62`, lalu masukkan nomor tanpa awalan `0`.
+
+    Contoh:
+
+    - Nomor biasa: `081234567890`
+    - Ditulis di sistem: `81234567890`
+  </Step>
+  <Step title="Pilih kategori">
+    Pilih salah satu kategori:
+
+    - **Regular**
+    - **VIP**
+    - **VVIP**
+
+    Secara default, kategori **Regular** dapat terpilih.
+  </Step>
+  <Step title="Pilih Group">
+    Pilih grup tamu jika pengelompokan sudah dibuat di sistem.
+  </Step>
+  <Step title="Isi Jumlah Tamu">
+    Masukkan angka pada kolom **Jumlah Tamu** sesuai jumlah yang ingin dicatat untuk entri tamu tersebut.
+  </Step>
+  <Step title="Tambahkan keterangan">
+    Jika diperlukan, isi **Keterangan** dengan catatan tambahan.
+  </Step>
+  <Step title="Simpan data">
+    Simpan form dan pastikan nama tamu muncul pada daftar.
+  </Step>
+</Steps>
+
+### Contoh pengisian
+
+| Field | Contoh |
+| --- | --- |
+| Nama Tamu | Andi Saputra |
+| Kode Negara | \+62 |
+| Nomor WhatsApp | 81234567890 |
+| Kategori | VIP |
+| Group | Keluarga Mempelai |
+| Jumlah Tamu | 2 |
+| Keterangan | Teman keluarga |
+
+<Tip>
+  Gunakan pola penamaan grup yang konsisten, misalnya **Keluarga Pria**, **Keluarga Wanita**, **Teman Kantor**, atau **VIP Instansi**. Pengelompokan yang rapi akan memudahkan filter, export, dan pengiriman blast.
+</Tip>
+
+---
+
+## 4. Import data tamu dari Excel
+
+Jika daftar tamu cukup banyak, gunakan fitur **Import** agar tidak perlu memasukkan data satu per satu.
+
+### Ketentuan file import
+
+Sistem menampilkan ketentuan berikut:
+
+- format file harus `.xls` atau `.xlsx`;
+- gunakan format Excel yang sesuai dengan template;
+- tersedia tombol **Download Template**;
+- maksimal **500 tamu dalam 1 kali proses import**;
+- semakin banyak data, proses dapat membutuhkan waktu lebih lama;
+- jangan melakukan refresh halaman saat proses import berjalan.
+
+<Warning>
+  Jangan mengubah struktur template secara sembarangan. Gunakan template dari sistem agar kolom dapat dibaca dengan benar.
+</Warning>
+
+### Langkah import
+
+<Steps>
+  <Step title="Klik Import">
+    Pada halaman Data Tamu, klik **Import**.
+  </Step>
+  <Step title="Download template">
+    Jika belum memiliki format yang benar, klik **Download Template**.
+  </Step>
+  <Step title="Isi data di Excel">
+    Masukkan data tamu ke file template. Pertahankan susunan kolom yang sudah disediakan.
+  </Step>
+  <Step title="Simpan file">
+    Simpan file sebagai `.xls` atau `.xlsx`.
+  </Step>
+  <Step title="Pilih file Excel">
+    Kembali ke modal **Import Data Tamu**, lalu klik area **Select file excel** dan pilih file yang sudah disiapkan.
+  </Step>
+  <Step title="Mulai import">
+    Setelah file dipilih, klik **Import Sekarang**.
+  </Step>
+  <Step title="Tunggu hingga selesai">
+    Jangan menutup atau me-refresh halaman selama import masih berlangsung.
+  </Step>
+  <Step title="Periksa daftar tamu">
+    Setelah proses selesai, cek beberapa data secara acak untuk memastikan nama, nomor, kategori, grup, dan jumlah tamu masuk dengan benar.
+  </Step>
+</Steps>
+
+### Jika tamu lebih dari 500
+
+Pisahkan file menjadi beberapa batch.
+
+Contoh:
+
+- File 1: tamu 1–500
+- File 2: tamu 501–1.000
+- File 3: tamu 1.001–1.500
+
+<Tip>
+  Sebelum import massal, lakukan uji coba dengan beberapa baris terlebih dahulu. Setelah hasilnya benar, lanjutkan ke batch yang lebih besar.
+</Tip>
+
+---
+
+## 5. Mencari tamu
+
+Gunakan kolom **Cari Tamu** untuk menemukan tamu tertentu tanpa membuka seluruh daftar satu per satu.
+
+<Steps>
+  <Step title="Klik kolom pencarian">
+    Cari kotak dengan placeholder **Cari Tamu.**
+  </Step>
+  <Step title="Masukkan nama">
+    Ketik sebagian atau seluruh nama tamu.
+  </Step>
+  <Step title="Periksa hasil">
+    Daftar akan menampilkan data yang sesuai dengan kata pencarian.
+  </Step>
+</Steps>
+
+Contoh pencarian:
+
+```text
+Andi
+```
+
+Gunakan pencarian ketika Anda ingin:
+
+- mengecek apakah nama tertentu sudah terdaftar;
+- mencari tamu sebelum melakukan edit;
+- memastikan data tidak tertukar;
+- menemukan tamu sebelum mengirim undangan.
+
+---
+
+## 6. Menggunakan Filter
+
+Filter membantu menampilkan tamu berdasarkan kondisi tertentu.
+
+Pilihan filter pada halaman Data Tamu meliputi:
+
+### Kategori
+
+- Semua Kategori
+- Regular
+- VIP
+- VVIP
+
+### Group
+
+Pilih grup tamu yang tersedia pada event.
+
+### Status Blast
+
+- **Semua Status**
+- **Terkirim** — mencakup status `sent`, `delivered`, dan `read`
+- **Pending / Processing**
+- **Gagal**
+- **Dilewati**
+- **Belum Dikirim**
+
+### Konfirmasi
+
+- **Semua Konfirmasi**
+- **Sudah Konfirmasi**
+- **Belum Konfirmasi**
+
+### RSVP
+
+- **Semua RSVP**
+- **Hadir**
+- **Tidak Hadir**
+
+<Steps>
+  <Step title="Buka Filter">
+    Klik tombol atau ikon **Filter** di area daftar tamu.
+  </Step>
+  <Step title="Tentukan kriteria">
+    Pilih kategori, grup, status blast, konfirmasi, atau RSVP yang diperlukan.
+  </Step>
+  <Step title="Terapkan">
+    Klik **Filter**.
+  </Step>
+  <Step title="Periksa hasil">
+    Pastikan daftar yang tampil sesuai dengan kebutuhan Anda.
+  </Step>
+</Steps>
+
+### Contoh penggunaan filter
+
+<Tabs>
+  <Tab title="Cari VIP">
+    Pilih **Kategori → VIP**, lalu terapkan filter.
+  </Tab>
+  <Tab title="Belum dikirim WA">
+    Pilih **Status Blast → Belum Dikirim** untuk menemukan tamu yang belum menerima blast.
+  </Tab>
+  <Tab title="Belum konfirmasi">
+    Pilih **Konfirmasi → Belum Konfirmasi** untuk menyiapkan follow-up.
+  </Tab>
+  <Tab title="RSVP Hadir">
+    Pilih **RSVP → Hadir** untuk melihat tamu yang menyatakan hadir.
+  </Tab>
+</Tabs>
+
+<Tip>
+  Kombinasikan filter sebelum menggunakan bulk action. Contohnya: filter **VIP \+ Belum Dikirim**, lalu pilih semua hasil untuk mengirim blast hanya ke segmen tersebut.
+</Tip>
+
+---
+
+## 7. Memilih banyak tamu
+
+Halaman Data Tamu mendukung pemilihan beberapa tamu untuk tindakan massal.
+
+Tersedia indikator seperti:
+
+```text
+0 Selected
+```
+
+dan opsi **Select All** pada tampilan mobile.
+
+Setelah satu atau lebih tamu dipilih, tombol bulk action dapat digunakan.
+
+Tombol yang tersedia meliputi:
+
+- **WhatsApp Blast**
+- **E-Invitation**
+- **Edit**
+- **Delete**
+
+<Note>
+  Tombol bulk action dapat berada dalam kondisi nonaktif sebelum ada tamu yang dipilih.
+</Note>
+
+---
+
+## 8. Edit banyak tamu sekaligus
+
+Bulk Edit berguna ketika kategori atau grup beberapa tamu perlu diubah bersamaan.
+
+Pilihan bulk edit yang tersedia mencakup:
+
+- **Kategori**
+  - Regular
+  - VIP
+  - VVIP
+- **Group**
+
+<Steps>
+  <Step title="Pilih tamu">
+    Centang tamu yang ingin diubah.
+  </Step>
+  <Step title="Klik Edit">
+    Klik tombol **Edit** pada area bulk action.
+  </Step>
+  <Step title="Pilih perubahan">
+    Tentukan kategori dan/atau grup.
+  </Step>
+  <Step title="Simpan">
+    Klik **Simpan**.
+  </Step>
+  <Step title="Verifikasi">
+    Periksa beberapa data untuk memastikan perubahan sudah diterapkan.
+  </Step>
+</Steps>
+
+<Warning>
+  Gunakan bulk edit dengan hati-hati karena perubahan akan diterapkan pada beberapa data sekaligus.
+</Warning>
+
+---
+
+## 9. Mengedit satu tamu
+
+Gunakan fungsi edit individual jika data satu tamu perlu diperbaiki.
+
+Form edit memuat data seperti:
+
+- nama;
+- nomor WhatsApp;
+- kategori;
+- grup;
+- jumlah tamu;
+- keterangan.
+
+Setelah perubahan selesai, klik **Update**.
+
+### Kondisi yang umum membutuhkan edit
+
+- nomor WhatsApp salah;
+- kategori berubah dari Regular menjadi VIP;
+- tamu pindah grup;
+- jumlah tamu berubah;
+- keterangan perlu diperbarui.
+
+<Tip>
+  Periksa kembali nomor WhatsApp sebelum pengiriman undangan. Kesalahan satu digit dapat membuat undangan terkirim ke nomor yang salah atau gagal dikirim.
+</Tip>
+
+---
+
+## 10. Menghapus tamu
+
+Tersedia tombol **Delete** pada bulk action untuk menghapus data yang dipilih.
+
+<Steps>
+  <Step title="Pastikan data benar">
+    Gunakan pencarian atau filter agar tamu yang dipilih tidak keliru.
+  </Step>
+  <Step title="Pilih tamu">
+    Centang satu atau beberapa tamu.
+  </Step>
+  <Step title="Klik Delete">
+    Jalankan fungsi **Delete**.
+  </Step>
+  <Step title="Periksa daftar">
+    Pastikan hanya data yang dimaksud yang terhapus.
+  </Step>
+</Steps>
+
+<Warning>
+  Hapus data hanya jika memang tidak lagi diperlukan. Untuk daftar besar, periksa jumlah **Selected** sebelum menekan Delete.
+</Warning>
+
+---
+
+## 11. Mengatur Template WA Manual
+
+Tombol **Edit Template WA Manual** digunakan untuk mengatur pesan yang dapat dipersonalisasi otomatis.
+
+Variabel yang tersedia pada tampilan adalah:
+
+| Variabel | Fungsi |
+| --- | --- |
+| `[NAMA-TAMU]` | Menampilkan nama tamu |
+| `[LINK-UNDANGAN]` | Menampilkan link undangan |
+
+Contoh sederhana:
+
+```text
+Kepada Yth.
+*[NAMA-TAMU]*
+
+Kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri acara kami.
+
+Silakan buka undangan melalui tautan berikut:
+[LINK-UNDANGAN]
+
+Terima kasih.
+```
+
+<Steps>
+  <Step title="Klik Edit Template WA Manual">
+    Buka pengaturan template dari halaman Data Tamu.
+  </Step>
+  <Step title="Tulis pesan">
+    Isi area **Template Pesan**.
+  </Step>
+  <Step title="Masukkan variabel">
+    Gunakan `[NAMA-TAMU]` dan `[LINK-UNDANGAN]` pada bagian yang ingin diisi otomatis.
+  </Step>
+  <Step title="Simpan">
+    Klik **Simpan**.
+  </Step>
+</Steps>
+
+<Warning>
+  Jangan mengubah penulisan variabel. Gunakan format persis `[NAMA-TAMU]` dan `[LINK-UNDANGAN]` agar sistem dapat mengenalinya.
+</Warning>
+
+---
+
+## 12. Generate E-Invitation
+
+Fitur **E-Invitation** digunakan untuk membuat undangan personal berdasarkan data tamu.
+
+Pada modal **Generate E-Invitation**, kategori yang tersedia adalah:
+
+- **Semua**
+- **Regular**
+- **VIP**
+- **VVIP**
+
+Tersedia pula tombol **Download (V2)**.
+
+### Generate berdasarkan tamu yang dipilih
+
+<Steps>
+  <Step title="Pilih tamu">
+    Centang tamu yang ingin dibuatkan E-Invitation.
+  </Step>
+  <Step title="Klik E-Invitation">
+    Klik tombol **E-Invitation** pada bulk action.
+  </Step>
+  <Step title="Pilih kategori jika diperlukan">
+    Tentukan kategori yang ingin diproses atau pilih **Semua**.
+  </Step>
+  <Step title="Generate">
+    Jalankan proses download/generate yang tersedia.
+  </Step>
+  <Step title="Periksa hasil">
+    Pastikan nama tamu dan elemen personal pada undangan sesuai.
+  </Step>
+</Steps>
+
+<Note>
+  E-Invitation digunakan sebagai undangan personal per tamu dan dapat berkaitan dengan identitas atau QR unik pada alur undangan/check-in.
+</Note>
+
+---
+
+## 13. Mengirim WhatsApp Blast
+
+WhatsApp Blast digunakan untuk mengirim pesan ke banyak tamu terpilih.
+
+Pada modal **WhatsApp Blast**, sistem menampilkan:
+
+- jumlah tamu yang akan menerima pesan;
+- daftar tamu terpilih;
+- kolom **Cari & tambah tamu lainnya**;
+- pilihan **Template**;
+- preview pesan.
+
+<Steps>
+  <Step title="Periksa kuota">
+    Pastikan **Sisa Kuota WA Official Blast** mencukupi.
+  </Step>
+  <Step title="Pilih tamu">
+    Centang tamu yang ingin menerima pesan.
+  </Step>
+  <Step title="Klik WhatsApp Blast">
+    Buka modal WhatsApp Blast.
+  </Step>
+  <Step title="Periksa jumlah penerima">
+    Cocokkan jumlah penerima pada modal dengan jumlah tamu yang memang ingin dihubungi.
+  </Step>
+  <Step title="Tambahkan tamu jika perlu">
+    Gunakan kolom **Cari & tambah tamu lainnya** jika ada penerima yang belum terpilih.
+  </Step>
+  <Step title="Pilih Template">
+    Pilih template WhatsApp yang tersedia.
+  </Step>
+  <Step title="Periksa preview">
+    Baca preview pesan sebelum mengirim.
+  </Step>
+  <Step title="Kirim">
+    Lanjutkan pengiriman sesuai tombol yang tersedia pada modal.
+  </Step>
+  <Step title="Pantau status">
+    Setelah pengiriman, periksa statistik Sent, Delivered, Read, atau Failed.
+  </Step>
+</Steps>
+
+### Arti status blast pada filter
+
+| Status | Kapan digunakan |
+| --- | --- |
+| **Terkirim** | Memeriksa tamu dengan pesan yang sudah berada pada status sent/delivered/read |
+| **Pending / Processing** | Memeriksa pesan yang masih diproses |
+| **Gagal** | Menemukan pesan yang gagal |
+| **Dilewati** | Menemukan pesan yang tidak diproses/dilewati |
+| **Belum Dikirim** | Menemukan tamu yang belum memiliki pengiriman |
+
+### Alur follow-up yang disarankan
+
+```text
+Filter Belum Dikirim
+        ↓
+Pilih tamu
+        ↓
+WhatsApp Blast
+        ↓
+Pantau Failed
+        ↓
+Periksa nomor tamu
+        ↓
+Kirim ulang jika diperlukan
+```
+
+<Warning>
+  Sebelum mengirim blast ke seluruh tamu, lakukan pengujian pada sedikit penerima untuk memastikan template, nama, link, dan format pesan tampil dengan benar.
+</Warning>
+
+---
+
+## 14. Melihat WhatsApp Chat dan WA Blast History
+
+Di submenu **Data Tamu** terdapat:
+
+### WhatsApp Chat
+
+Gunakan menu ini untuk komunikasi individual dengan tamu.
+
+Cocok digunakan ketika:
+
+- tamu bertanya tentang acara;
+- perlu mengirim ulang informasi;
+- perlu melakukan komunikasi satu per satu.
+
+### WA Blast History
+
+Gunakan menu ini untuk memeriksa riwayat pengiriman blast.
+
+Setelah melakukan blast, biasakan memeriksa riwayat untuk memastikan proses pengiriman sesuai rencana.
+
+---
+
+## 15. Export daftar tamu ke PDF
+
+Tombol **Export PDF** digunakan untuk mengunduh daftar tamu berdasarkan filter tertentu.
+
+Filter export yang tersedia meliputi:
+
+### Status RSVP
+
+- Semua Status
+- Hadir
+- Tidak Hadir
+- Sudah Konfirmasi
+
+### Kategori
+
+- Semua Kategori
+- Regular
+- VIP
+- VVIP
+
+### Group
+
+- Semua Group
+- grup tertentu yang tersedia pada event
+
+<Steps>
+  <Step title="Klik Export PDF">
+    Klik tombol **Export PDF** di halaman Data Tamu.
+  </Step>
+  <Step title="Pilih Status RSVP">
+    Tentukan status yang ingin dimasukkan ke PDF.
+  </Step>
+  <Step title="Pilih Kategori">
+    Pilih semua kategori atau satu kategori tertentu.
+  </Step>
+  <Step title="Pilih Group">
+    Pilih semua grup atau grup tertentu.
+  </Step>
+  <Step title="Download">
+    Klik **Download PDF**.
+  </Step>
+</Steps>
+
+### Contoh kebutuhan export
+
+<Tabs>
+  <Tab title="Semua tamu VIP">
+    - Status RSVP: **Semua Status**
+    - Kategori: **VIP**
+    - Group: **Semua Group**
+  </Tab>
+  <Tab title="Tamu hadir">
+    - Status RSVP: **Hadir**
+    - Kategori: **Semua Kategori**
+    - Group: **Semua Group**
+  </Tab>
+  <Tab title="Grup tertentu">
+    - Status RSVP: sesuai kebutuhan
+    - Kategori: sesuai kebutuhan
+    - Group: pilih grup tujuan
+  </Tab>
+</Tabs>
+
+---
+
+## 16. Memahami RSVP
+
+Status RSVP membantu memantau respons tamu sebelum acara.
+
+Secara umum, halaman Data Tamu membedakan kondisi seperti:
+
+- **Konfirmasi Hadir**
+- **Belum Konfirmasi**
+- **Tidak Hadir**
+
+Gunakan informasi ini untuk:
+
+- memperkirakan jumlah kehadiran;
+- menyiapkan follow-up;
+- mengatur meja;
+- mengatur souvenir;
+- menyiapkan kebutuhan venue.
+
+### Strategi penggunaan
+
+<Steps>
+  <Step title="Pantau Belum Konfirmasi">
+    Beberapa hari sebelum acara, gunakan filter **Belum Konfirmasi**.
+  </Step>
+  <Step title="Kelompokkan penerima">
+    Jika perlu, tambahkan filter kategori atau grup.
+  </Step>
+  <Step title="Lakukan follow-up">
+    Hubungi tamu menggunakan saluran WhatsApp yang tersedia.
+  </Step>
+  <Step title="Pantau perubahan statistik">
+    Periksa kembali statistik tamu setelah respons masuk.
+  </Step>
+</Steps>
+
+---
+
+## 17. Hubungan Data Tamu dengan menu lain
+
+Data yang Anda kelola di halaman Data Tamu menjadi dasar bagi proses lain dalam sistem.
+
+<CardGroup cols={2}>
+  <Card title="Buku Tamu">
+    Digunakan untuk melihat pencatatan kedatangan/check-in tamu.
+  </Card>
+
+  <Card title="Manajemen Meja">
+    Digunakan untuk mengatur meja, kapasitas, dan penempatan tamu.
+  </Card>
+
+  <Card title="Manajemen Souvenir">
+    Digunakan untuk mengelola souvenir dan pencatatan distribusinya.
+  </Card>
+
+  <Card title="Ucapan">
+    Digunakan untuk melihat ucapan atau pesan yang masuk dari tamu.
+  </Card>
+</CardGroup>
+
+<Note>
+  Semakin rapi data awal pada menu Data Tamu, semakin mudah proses pengelolaan meja, RSVP, pengiriman undangan, dan check-in pada hari acara.
+</Note>
+
+---
+
+## 18. Alur kerja yang disarankan
+
+Untuk mengurangi kesalahan, gunakan urutan kerja berikut.
+
+<Steps>
+  <Step title="Siapkan data tamu">
+    Kumpulkan nama, nomor WhatsApp, kategori, grup, dan informasi pendukung.
+  </Step>
+  <Step title="Rapikan kategori dan grup">
+    Tentukan struktur Regular/VIP/VVIP serta grup sebelum import massal.
+  </Step>
+  <Step title="Masukkan data">
+    Gunakan Tambah Tamu untuk jumlah sedikit atau Import Excel untuk jumlah banyak.
+  </Step>
+  <Step title="Validasi data">
+    Cari beberapa nama secara acak dan cek nomor WhatsApp, kategori, grup, serta jumlah tamu.
+  </Step>
+  <Step title="Atur template pesan">
+    Pastikan Template WA Manual atau template blast sudah benar.
+  </Step>
+  <Step title="Generate E-Invitation">
+    Buat undangan personal sesuai tamu/kategori.
+  </Step>
+  <Step title="Uji pengiriman">
+    Kirim terlebih dahulu ke kelompok kecil.
+  </Step>
+  <Step title="Kirim WhatsApp Blast">
+    Setelah preview dan hasil uji benar, kirim ke segmen yang ditentukan.
+  </Step>
+  <Step title="Pantau status">
+    Periksa Sent, Delivered, Read, dan Failed.
+  </Step>
+  <Step title="Pantau RSVP">
+    Gunakan filter Hadir, Tidak Hadir, dan Belum Konfirmasi.
+  </Step>
+  <Step title="Export bila diperlukan">
+    Gunakan Export PDF untuk kebutuhan koordinasi, laporan, atau daftar operasional.
+  </Step>
+</Steps>
+
+---
+
+## 19. Checklist sebelum mengirim undangan
+
+Sebelum WhatsApp Blast atau E-Invitation dikirim ke banyak tamu, periksa:
+
+- [ ] Nama tamu sudah benar
+- [ ] Nomor WhatsApp sudah benar
+- [ ] Nomor menggunakan kode negara yang tepat
+- [ ] Untuk `+62`, nomor tidak diawali `0`
+- [ ] Kategori tamu sudah benar
+- [ ] Grup sudah benar
+- [ ] Jumlah tamu sudah benar
+- [ ] Template pesan sudah diperiksa
+- [ ] Variabel `[NAMA-TAMU]` ditulis benar
+- [ ] Variabel `[LINK-UNDANGAN]` ditulis benar
+- [ ] Preview pesan sudah diperiksa
+- [ ] Sisa kuota blast mencukupi
+- [ ] Daftar penerima sudah sesuai
+- [ ] Pengujian ke sedikit penerima sudah dilakukan
+
+---
+
+## 20. Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="Tombol WhatsApp Blast tidak bisa diklik">
+    Pastikan minimal satu tamu sudah dipilih. Tombol bulk action dapat nonaktif ketika jumlah **Selected** masih `0`.
+  </Accordion>
+
+  <Accordion title="Tombol E-Invitation tidak aktif">
+    Pilih satu atau beberapa tamu terlebih dahulu, kemudian coba kembali tombol **E-Invitation**.
+  </Accordion>
+
+  <Accordion title="Import Sekarang masih nonaktif">
+    Pastikan file Excel sudah dipilih pada bagian **Select file excel** dan file memiliki format yang diterima sistem.
+  </Accordion>
+
+  <Accordion title="Import Excel gagal atau hasilnya tidak sesuai">
+    Gunakan template resmi dari tombol **Download Template**, pertahankan struktur kolom, dan pastikan format file `.xls` atau `.xlsx`.
+  </Accordion>
+
+  <Accordion title="Jumlah data terlalu banyak untuk sekali import">
+    Bagi file menjadi beberapa batch karena satu proses import dibatasi maksimal **500 tamu**.
+  </Accordion>
+
+  <Accordion title="Nomor WhatsApp Indonesia tidak terbaca dengan benar">
+    Gunakan kode negara `+62` dan masukkan nomor tanpa awalan `0`. Contoh `081234567890` ditulis sebagai `81234567890`.
+  </Accordion>
+
+  <Accordion title="Pesan WhatsApp gagal">
+    Gunakan filter **Status Blast → Gagal**, lalu periksa nomor WhatsApp tamu dan kondisi pengiriman sebelum mencoba kembali.
+  </Accordion>
+
+  <Accordion title="Pesan masih Pending / Processing">
+    Gunakan filter **Pending / Processing** untuk memisahkan pesan yang masih diproses dari pesan yang sudah selesai.
+  </Accordion>
+
+  <Accordion title="Nama atau link tidak muncul pada template WA Manual">
+    Pastikan variabel ditulis persis sebagai `[NAMA-TAMU]` dan `[LINK-UNDANGAN]`.
+  </Accordion>
+
+  <Accordion title="Saya hanya ingin export tamu VIP yang hadir">
+    Buka **Export PDF**, pilih **Status RSVP → Hadir**, **Kategori → VIP**, lalu pilih group yang diperlukan atau **Semua Group**.
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## 21. FAQ
+
+### Apakah nomor WhatsApp wajib diisi?
+
+Tidak. Pada form Tambah Tamu, nomor WhatsApp ditandai sebagai **Optional**. Namun, nomor diperlukan jika tamu akan dihubungi melalui WhatsApp.
+
+### Kategori tamu apa saja yang tersedia?
+
+Pada halaman ini tersedia:
+
+- Regular
+- VIP
+- VVIP
+
+### Apakah data tamu bisa dimasukkan dari Excel?
+
+Ya. Gunakan fitur **Import Data Tamu** dengan file `.xls` atau `.xlsx`.
+
+### Berapa batas import dalam satu proses?
+
+Maksimal **500 tamu per 1 kali proses import**.
+
+### Apakah halaman boleh di-refresh ketika import berlangsung?
+
+Sebaiknya tidak. Pada instruksi import, pengguna diminta tidak me-refresh halaman ketika proses sedang berlangsung.
+
+### Apakah banyak tamu dapat diedit sekaligus?
+
+Ya. Pilih beberapa tamu lalu gunakan bulk action **Edit** untuk memperbarui kategori atau group.
+
+### Apakah banyak tamu dapat dihapus sekaligus?
+
+Ya. Pilih tamu yang diperlukan lalu gunakan bulk action **Delete**.
+
+### Apakah daftar tamu dapat difilter berdasarkan status WhatsApp?
+
+Ya. Filter **Status Blast** menyediakan Terkirim, Pending / Processing, Gagal, Dilewati, dan Belum Dikirim.
+
+### Apakah daftar tamu dapat diekspor berdasarkan kategori?
+
+Ya. **Export PDF** menyediakan filter kategori Regular, VIP, VVIP, atau Semua Kategori.
+
+### Apakah E-Invitation bisa dibuat berdasarkan kategori?
+
+Pada modal Generate E-Invitation tersedia pilihan Semua, Regular, VIP, dan VVIP.
+
+---
+
+## Ringkasan
+
+Alur paling aman untuk menggunakan Data Tamu adalah:
+
+```text
+Siapkan Data
+   ↓
+Tambah / Import Tamu
+   ↓
+Validasi Nama + WhatsApp + Kategori + Group
+   ↓
+Atur Template
+   ↓
+Generate E-Invitation
+   ↓
+Uji Pengiriman
+   ↓
+WhatsApp Blast
+   ↓
+Pantau Status Pengiriman
+   ↓
+Pantau RSVP
+   ↓
+Kelola Meja / Souvenir / Check-In
+   ↓
+Export Laporan
+```
+
+<Check>
+  Dengan mengikuti urutan di atas, pengelolaan tamu menjadi lebih terstruktur dan risiko salah data atau salah penerima dapat dikurangi.
+</Check>
